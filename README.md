@@ -8,10 +8,10 @@ We uploaded the various web crawlers that we did using the Scrapy library to ext
 
 ##Database Developement
 
-We created a database using mySQL Workbench called Tailored with a table named music. This table has a primary key and the following columns: Song, Artist, and Album.
+We created a database using mySQL Workbench called "Tailored" with a table named "music." This table has a primary key and three columns named: Song, Artist, and Album.
 
 ######To insert the information we used the following query:
-
+```
 LOAD DATA INFILE 'C:/Users/MariaInes/Downloads/yosifinal.csv'
 
 INTO TABLE music
@@ -23,3 +23,6 @@ LINES TERMINATED BY '\n'
 IGNORE 1 ROWS
 
 (Song,Artist,Album)
+```
+In order to import the information, each file had to be converted into a .csv file. We used one query per file of the extracted information from the radios in which we indicated the exact location of the file.
+ 
